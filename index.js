@@ -48,7 +48,7 @@ bot.on("ready", async () => {
 
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
 
-  bot.user.setActivity("with SP Trucking Co", {type: "PLAYING"});
+  bot.user.setActivity("over the SAPW community", {type: "WATCHING"});
 
    await client.change_presence(game=discord.Game(name='something goes here'));
 
