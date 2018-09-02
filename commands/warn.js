@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
   if(!message.member.hasPermission("MANAGE_SERVER")) return message.reply("You do not have the permission to do this!");
   let wUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
   if(!wUser) return message.reply("Sorry, I could not find that user.");
-  if(wUser.hasPermission("MANAGE_MESSAGES")) return message.reply("You do not have the right permissions.");
+  if(wUser.hasPermission("MANAGE_SERVER")) return message.reply("You do not have the right permissions.");
   let reason = args.join(" ").slice(22);
 
   if(!warns[wUser.id]) warns[wUser.id] = {
