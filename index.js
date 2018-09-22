@@ -48,7 +48,7 @@ bot.on("ready", async () => {
 
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
 
-  bot.user.setActivity("", {type: ""});
+  bot.user.setActivity("on the SAPW Server", {type: "HANGING OUT"});
 
    await client.change_presence(game=discord.Game(name='something goes here'));
 
